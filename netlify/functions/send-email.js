@@ -28,7 +28,8 @@ exports.handler = async (event, context) => {
   try {
     const { email, page, section } = JSON.parse(event.body);
 
-    const transporter = nodemailer.createTransporter({
+    // 🔧 CORRECCIÓN: createTransport (sin 'er')
+    const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
