@@ -1,0 +1,11 @@
+{
+  "name": "api-email-netlify",
+  "version": "1.0.0",
+  "description": "API para envío de emails usando Netlify Functions",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "scripts": {
+    "dev": "netlify dev"
+  }
+}
